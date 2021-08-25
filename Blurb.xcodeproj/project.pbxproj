@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E1D00351BD1AAB7006F45BD /* PeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D00341BD1AAB7006F45BD /* PeekViewController.swift */; };
 		2E2A03EE1FCB66FB009C5584 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2A03EC1FCB66FB009C5584 /* Fabric.framework */; };
-		2E2A03EF1FCB66FB009C5584 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2A03ED1FCB66FB009C5584 /* Crashlytics.framework */; };
 		2E2A03F11FCB699D009C5584 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A03F01FCB699D009C5584 /* Events.swift */; };
 		2E47DCEF1B2FEDB500FA9C15 /* EditProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47DCEE1B2FEDB500FA9C15 /* EditProxy.swift */; };
 		2E6AC5661B3E197800642AA4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AC5651B3E197800642AA4 /* ShareViewController.swift */; };
@@ -26,7 +25,6 @@
 		2E162F8E1FBCE1E700487372 /* Custom Blur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Custom Blur.entitlements"; sourceTree = "<group>"; };
 		2E1D00341BD1AAB7006F45BD /* PeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeekViewController.swift; sourceTree = "<group>"; };
 		2E2A03EC1FCB66FB009C5584 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		2E2A03ED1FCB66FB009C5584 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2E2A03F01FCB699D009C5584 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		2E47DCEE1B2FEDB500FA9C15 /* EditProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProxy.swift; sourceTree = "<group>"; };
 		2E6AC5651B3E197800642AA4 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +47,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EFC18CB1B294A75002B615D /* Photos.framework in Frameworks */,
-				2E2A03EF1FCB66FB009C5584 /* Crashlytics.framework in Frameworks */,
 				2E2A03EE1FCB66FB009C5584 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +59,6 @@
 			children = (
 				2E8664FB1B2948A400D2B010 /* Blurb */,
 				2EFC18CA1B294A75002B615D /* Photos.framework */,
-				2E2A03ED1FCB66FB009C5584 /* Crashlytics.framework */,
 				2E2A03EC1FCB66FB009C5584 /* Fabric.framework */,
 				2E8664FA1B2948A400D2B010 /* Products */,
 			);
@@ -138,7 +134,7 @@
 		2E8664F11B2948A400D2B010 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = Cal;
 				TargetAttributes = {
 					2E8664F81B2948A400D2B010 = {
@@ -157,7 +153,7 @@
 				};
 			};
 			buildConfigurationList = 2E8664F41B2948A400D2B010 /* Build configuration list for PBXProject "Blurb" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -268,6 +264,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -292,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -324,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -342,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,8 +361,11 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Blurb/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cal.Custom-Blur";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -384,12 +385,16 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Blurb/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cal.Custom-Blur";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

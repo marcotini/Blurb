@@ -7,7 +7,6 @@
 //
 
 import Fabric
-import Crashlytics
 import UIKit
 
 // MARK: Event
@@ -44,7 +43,6 @@ extension Event {
         customAttributes["User Language"] = Locale.current.languageCode ?? "en"
             
         print("Logged event \(eventName) with \(customAttributes)")
-        Answers.logCustomEvent(withName: eventName, customAttributes: customAttributes)
     }
     
     private var eventName: String {

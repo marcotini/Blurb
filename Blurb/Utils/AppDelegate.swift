@@ -8,7 +8,6 @@
 
 import UIKit
 import Fabric
-import Crashlytics
 
 let IBStatusBarTappedNotification = "com.cal.instablur.statusBarTapped"
 
@@ -17,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Fabric.with([Crashlytics.self, Answers.self])
         Event.appLaunched.record()
         return true
     }
